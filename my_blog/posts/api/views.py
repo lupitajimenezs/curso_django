@@ -16,7 +16,7 @@ class PostModelViewSet(ModelViewSet):
     serializer_class = PostSerializer
     queryset = Post.objects.all()
     # PODEMOS lIMITAR LAS OPCIONES
-    #http_method_names = ["get", "put"]
+    http_method_names = ["get"]
 
 #USANDO PostViewSet
 # class PostViewSet(ViewSet):
